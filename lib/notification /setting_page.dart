@@ -100,7 +100,7 @@ class SubSetting extends StatelessWidget {
                 Row(
                   children: [
                     Icon(
-                      Icons.question_answer,
+                      Icons.question_answer_outlined,
                       color: Colors.black,
                       size: 32.0,
                     ),
