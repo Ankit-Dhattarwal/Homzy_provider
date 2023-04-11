@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider_night/notification /request_screen.dart';
-import 'package:provider_night/notification /respose.dart';
 import 'package:provider_night/notification /setting_page.dart';
 
 
@@ -51,74 +49,74 @@ class HomeScreen extends StatelessWidget {
             height: 80,
           ),
 
-          Row(
-              children: [
-                Expanded(
-                  child:Container(
-                    padding: EdgeInsets.all(16.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        CircleAvatar(
-                          radius: 30.0,
-                          child: Icon(Icons.attach_money, size: 35.0, color: Colors.white),
-                          backgroundColor: Colors.green,
-                        ),
-                        // SizedBox(height: 16.0),
-                        // Text(
-                        //   '60',
-                        //   style: TextStyle(
-                        //     color: Colors.green,
-                        //     fontSize: 24.0,
-                        //     fontWeight: FontWeight.bold,
-                        //   ),
-                        // ),
-                        SizedBox(height: 40.0),
-                        Text(
-                          'Pending Request',
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: Container(
-                    padding: EdgeInsets.all(16.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        CircleAvatar(
-                          radius: 30.0,
-                          child: Icon(Icons.attach_money, size: 35.0, color: Colors.white),
-                          backgroundColor: Colors.blue,
-                        ),
-                        SizedBox(height: 16.0),
-                        Text(
-                          '40',
-                          style: TextStyle(
-                            color: Colors.blueAccent,
-                            fontSize: 24.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        SizedBox(height: 8.0),
-                        Text(
-                          'Order Reviced',
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
+          // Row(
+          //     children: [
+          //       Expanded(
+          //         child:Container(
+          //           padding: EdgeInsets.all(16.0),
+          //           child: Column(
+          //             crossAxisAlignment: CrossAxisAlignment.start,
+          //             children: [
+          //               CircleAvatar(
+          //                 radius: 30.0,
+          //                 child: Icon(Icons.attach_money, size: 35.0, color: Colors.white),
+          //                 backgroundColor: Colors.green,
+          //               ),
+          //               // SizedBox(height: 16.0),
+          //               // Text(
+          //               //   '60',
+          //               //   style: TextStyle(
+          //               //     color: Colors.green,
+          //               //     fontSize: 24.0,
+          //               //     fontWeight: FontWeight.bold,
+          //               //   ),
+          //               // ),
+          //               SizedBox(height: 40.0),
+          //               Text(
+          //                 'Pending Request',
+          //                 style: TextStyle(
+          //                   fontSize: 16.0,
+          //                   fontWeight: FontWeight.bold,
+          //                 ),
+          //               ),
+          //             ],
+          //           ),
+          //         ),
+          //       ),
+          //       Expanded(
+          //         child: Container(
+          //           padding: EdgeInsets.all(16.0),
+          //           child: Column(
+          //             crossAxisAlignment: CrossAxisAlignment.start,
+          //             children: [
+          //               CircleAvatar(
+          //                 radius: 30.0,
+          //                 child: Icon(Icons.attach_money, size: 35.0, color: Colors.white),
+          //                 backgroundColor: Colors.blue,
+          //               ),
+          //               SizedBox(height: 16.0),
+          //               Text(
+          //                 '40',
+          //                 style: TextStyle(
+          //                   color: Colors.blueAccent,
+          //                   fontSize: 24.0,
+          //                   fontWeight: FontWeight.bold,
+          //                 ),
+          //               ),
+          //               SizedBox(height: 8.0),
+          //               Text(
+          //                 'Order Reviced',
+          //                 style: TextStyle(
+          //                   fontSize: 16.0,
+          //                   fontWeight: FontWeight.bold,
+          //                 ),
+          //               ),
+          //             ],
+          //           ),
+          //         ),
+          //       ),
+          //     ],
+          //   ),
             SizedBox(
               height: 80,
             ),
@@ -204,8 +202,8 @@ class HomeScreen extends StatelessWidget {
             label: 'Notification',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
+            icon: Icon(Icons.account_circle_sharp),
+            label: 'Account',
           ),
         ],
         onTap: (int index) {

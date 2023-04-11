@@ -90,6 +90,40 @@ class SubSetting extends StatelessWidget {
             ),
           ),
           SizedBox(height: 16.0),
+          Container(
+            height: 60.0,
+            color: Colors.white,
+            padding: EdgeInsets.symmetric(horizontal: 16.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    Icon(
+                      Icons.question_answer,
+                      color: Colors.black,
+                      size: 32.0,
+                    ),
+                    SizedBox(width: 16.0),
+                    Text(
+                      "FAQ",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 24.0,
+                      ),
+                    ),
+                  ],
+                ),
+                Spacer(),
+                Icon(
+                  Icons.arrow_forward_ios,
+                  color: Colors.black,
+                  size: 24.0,
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 16.0),
           // Container 2
           Container(
             height: 60.0,
@@ -123,9 +157,46 @@ class SubSetting extends StatelessWidget {
               ],
             ),
           ),
+
           SizedBox(height: 16.0),
           // Container 3
+          // Container 4
+          // Container 4
+          Container(
+            height: 60.0,
+            color: Colors.white,
+            padding: EdgeInsets.symmetric(horizontal: 16.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.black,
+                      size: 32.0,
+                    ),
+                    SizedBox(width: 16.0),
+                    Text(
+                      "About us",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 24.0,
+                      ),
+                    ),
+                  ],
+                ),
+                Spacer(),
+                Icon(
+                  Icons.arrow_forward_ios,
+                  color: Colors.black,
+                  size: 24.0,
+                ),
+              ],
+            ),
+          ),
           SizedBox(height: 16.0),
+          // Container 3
           // Container 4
           Container(
             height: 60.0,
