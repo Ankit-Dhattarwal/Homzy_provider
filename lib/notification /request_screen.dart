@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider_night/notification /respose.dart';
+import 'package:provider_night/notification /pending_imag_request.dart';
 
 class ServiceRequestScreen extends StatelessWidget {
   @override
@@ -25,6 +26,10 @@ class ServiceRequestScreen extends StatelessWidget {
           ),
           GestureDetector(
             onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => pendingReqImg()),
+                  );
               // Navigate to detail screen for request 2
             },
             child: ListTile(

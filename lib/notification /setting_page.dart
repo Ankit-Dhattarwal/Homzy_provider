@@ -6,25 +6,59 @@ class SubSetting extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
+          SizedBox(
+            height: 20,
+          ),
           // Circular, small image in the middle of the top screen
           SafeArea(
             child: Container(
-              height: 120.0,
-              width: 120.0,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                  image: NetworkImage("https://picsum.photos/200"),
-                  fit: BoxFit.cover,
-                ),
+              padding: EdgeInsets.only(left: 10),
+              width: 400.0,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Container(
+                    height: 100.0,
+                    width: 100.0,
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                          image: AssetImage("assets/salon_men/salon_service_men.jpeg"),
+                          fit: BoxFit.cover,
+                        )
+                    ),
+                  ),
+                  SizedBox(width: 20.0),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Ankit Dhattarwal",
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(height: 5.0),
+                      Text(
+                        "7015216280",
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          color: Colors.grey,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
+
             ),
+
           ),
           SizedBox(height: 50),
           // Container 1 with payment icon and arrow
           Container(
             height: 60.0,
-            color: Colors.white,
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -32,16 +66,16 @@ class SubSetting extends StatelessWidget {
                 Row(
                   children: [
                     Icon(
-                      Icons.edit,
-                      color: Colors.black,
-                      size: 32.0,
+                      Icons.account_circle,
+                      color: Colors.blueAccent,
+                      size: 50.0,
                     ),
-                    SizedBox(width: 16.0),
+                    SizedBox(width: 10.0),
                     Text(
-                      "Profile Edit",
+                      "Profile",
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 24.0,
+                        fontSize: 23.0,
                       ),
                     ),
                   ],
@@ -55,10 +89,9 @@ class SubSetting extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 16.0),
+          SizedBox(height: 20.0),
           Container(
             height: 60.0,
-            color: Colors.white,
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -67,15 +100,15 @@ class SubSetting extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.payment,
-                      color: Colors.black,
-                      size: 32.0,
+                      color: Colors.purpleAccent,
+                      size: 50.0,
                     ),
-                    SizedBox(width: 16.0),
+                    SizedBox(width: 10.0),
                     Text(
                       "Payment",
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 24.0,
+                        fontSize: 23.0,
                       ),
                     ),
                   ],
@@ -89,10 +122,9 @@ class SubSetting extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 16.0),
+          SizedBox(height: 20.0),
           Container(
             height: 60.0,
-            color: Colors.white,
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -100,16 +132,16 @@ class SubSetting extends StatelessWidget {
                 Row(
                   children: [
                     Icon(
-                      Icons.question_answer_outlined,
-                      color: Colors.black,
-                      size: 32.0,
+                      Icons.question_answer,
+                      color: Colors.deepOrange,
+                      size: 50.0,
                     ),
-                    SizedBox(width: 16.0),
+                    SizedBox(width: 10.0),
                     Text(
                       "FAQ",
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 24.0,
+                        fontSize: 23.0,
                       ),
                     ),
                   ],
@@ -123,11 +155,10 @@ class SubSetting extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 16.0),
+          SizedBox(height: 20.0),
           // Container 2
           Container(
             height: 60.0,
-            color: Colors.white,
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -136,15 +167,15 @@ class SubSetting extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.help,
-                      color: Colors.black,
-                      size: 32.0,
+                      color: Colors.orangeAccent,
+                      size: 50.0,
                     ),
-                    SizedBox(width: 16.0),
+                    SizedBox(width: 10.0),
                     Text(
                       "Help",
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 24.0,
+                        fontSize: 23.0,
                       ),
                     ),
                   ],
@@ -158,13 +189,12 @@ class SubSetting extends StatelessWidget {
             ),
           ),
 
-          SizedBox(height: 16.0),
+          SizedBox(height: 20.0),
           // Container 3
           // Container 4
           // Container 4
           Container(
             height: 60.0,
-            color: Colors.white,
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -172,16 +202,16 @@ class SubSetting extends StatelessWidget {
                 Row(
                   children: [
                     Icon(
-                      Icons.email,
-                      color: Colors.black,
-                      size: 32.0,
+                      Icons.email_outlined,
+                      color: Colors.redAccent,
+                      size: 50.0,
                     ),
-                    SizedBox(width: 16.0),
+                    SizedBox(width: 10.0),
                     Text(
                       "About us",
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 24.0,
+                        fontSize: 23.0,
                       ),
                     ),
                   ],
@@ -195,12 +225,11 @@ class SubSetting extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 16.0),
+          SizedBox(height: 20.0),
           // Container 3
           // Container 4
           Container(
             height: 60.0,
-            color: Colors.white,
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -209,15 +238,15 @@ class SubSetting extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.logout,
-                      color: Colors.black,
-                      size: 32.0,
+                      color: Colors.blueGrey,
+                      size: 50.0,
                     ),
-                    SizedBox(width: 16.0),
+                    SizedBox(width: 10.0),
                     Text(
                       "Log Out",
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 24.0,
+                        fontSize: 23.0,
                       ),
                     ),
                   ],
