@@ -33,8 +33,12 @@ class ServiceRequestScreen extends StatelessWidget {
               // Navigate to detail screen for request 2
             },
             child: ListTile(
-              title: Text('Request 2'),
-              subtitle: Text('Some details about request 2'),
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage('assets/images.jpeg'),
+              ),
+              title: Text('Plumber'),
+              subtitle: Text('Ac repair'),
               trailing: Icon(Icons.arrow_forward),
             ),
           ),
