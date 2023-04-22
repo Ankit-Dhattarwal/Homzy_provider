@@ -9,41 +9,126 @@ class ServiceRequestScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Service Requests'),
       ),
-      body: ListView(
-        children: [
-          GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => RequestScreen()),
-              );
-            },
-            child: ListTile(
-              title: Text('Request 1'),
-              subtitle: Text('Some details about request 1'),
-              trailing: Icon(Icons.arrow_forward),
-            ),
-          ),
-          GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => pendingReqImg()),
-                  );
-              // Navigate to detail screen for request 2
-            },
-            child: ListTile(
-              leading: CircleAvatar(
-                radius: 30,
-                backgroundImage: AssetImage('assets/images.jpeg'),
+      body: Container(
+        child: Column(
+          children: [
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => pendingReqImg()),
+                );
+                // Navigate to detail screen for request 2
+              },
+              child: Container(
+                margin: EdgeInsets.all(8.0),
+                // decoration: BoxDecoration(
+                //   border: Border.all(
+                //     color: Colors.grey,
+                //     width: 1.0,
+                //   ),
+                //   borderRadius: BorderRadius.circular(8),
+                // ),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: CircleAvatar(
+                        radius: 30,
+                        backgroundImage: AssetImage('assets/images.jpeg'),
+                      ),
+                    ),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Plumber',
+                            style: TextStyle(
+                              color: Colors.redAccent,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18.0,
+                            ),
+                          ),
+                          SizedBox(height: 4.0),
+                          Text(
+                            'Ac repair',
+                            style: TextStyle(
+                              color: Colors.redAccent,
+                              fontSize: 16.0,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Icon(Icons.arrow_forward),
+                  ],
+                ),
               ),
-              title: Text('Plumber'),
-              subtitle: Text('Ac repair'),
-              trailing: Icon(Icons.arrow_forward),
             ),
-          ),
-          // Add more list items as needed
-        ],
+            Divider(
+              height: 2,
+              color: Colors.black,
+              indent: 16.0,
+              endIndent: 16.0,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => pendingReqImg()),
+                );
+                // Navigate to detail screen for request 2
+              },
+              child: Container(
+                margin: EdgeInsets.all(8.0),
+                // decoration: BoxDecoration(
+                //   border: Border.all(
+                //     color: Colors.grey,
+                //     width: 1.0,
+                //   ),
+                //   borderRadius: BorderRadius.circular(8),
+                // ),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: CircleAvatar(
+                        radius: 30,
+                        backgroundImage: AssetImage('assets/images.jpeg'),
+                      ),
+                    ),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Plumber',
+                            style: TextStyle(
+                              color: Colors.redAccent,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18.0,
+                            ),
+                          ),
+                          SizedBox(height: 4.0),
+                          Text(
+                            'Ac repair',
+                            style: TextStyle(
+                              color: Colors.redAccent,
+                              fontSize: 16.0,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Icon(Icons.arrow_forward),
+                  ],
+                ),
+              ),
+            ),
+            // Add more GestureDetector widgets inside the Column as needed
+          ],
+        ),
       ),
     );
   }
