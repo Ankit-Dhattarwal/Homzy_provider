@@ -193,6 +193,7 @@ class pendingReqImg extends StatelessWidget {
                       ),
                     ],
                   ),
+
                 ),
                 // Divider(
                 //   color: Colors.grey,
@@ -249,10 +250,10 @@ class pendingReqImg extends StatelessWidget {
                   );
                 },
                 child: Text('Back', style: TextStyle(color: Colors.black),),
-                 style: ElevatedButton.styleFrom(
-                minimumSize: Size(140, 50),
-                   backgroundColor: Colors.grey,
-                 ),
+                style: ElevatedButton.styleFrom(
+                  minimumSize: Size(140, 50),
+                  backgroundColor: Colors.grey,
+                ),
               ),
               ElevatedButton(
                 onPressed: () {
