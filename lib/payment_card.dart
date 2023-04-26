@@ -6,7 +6,6 @@ class PayCardScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        elevation: 0.0,
         leading: IconButton(
           color: Colors.black,
           icon: Icon(Icons.arrow_back_ios),
