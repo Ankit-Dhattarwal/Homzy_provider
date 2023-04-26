@@ -136,7 +136,8 @@ class HomeScreen extends StatelessWidget {
                     width: 380,
                     margin: EdgeInsets.only(left: 15,right: 16, bottom: 20),
                     decoration: BoxDecoration(
-                      color: Colors.blueAccent,
+                      color: Colors.white60,
+                      border: Border.all(color: Colors.blueAccent),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     padding: EdgeInsets.only(top: 30, left: 16, right: 16, bottom: 16),
@@ -182,7 +183,7 @@ class HomeScreen extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'Ankit Dhattarwal',
+                                  'XYZ',
                                   style: TextStyle(
                                     fontSize: 24,
                                     fontWeight: FontWeight.bold,
@@ -191,7 +192,7 @@ class HomeScreen extends StatelessWidget {
                                 ),
                                 SizedBox(height: 8),
                                 Text(
-                                  '7015216280',
+                                  '7015****80',
                                   style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
@@ -218,7 +219,7 @@ class HomeScreen extends StatelessWidget {
                               width: 100,
                             ),
                             Text(
-                              'Plumber',
+                              'abc',
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
@@ -243,7 +244,7 @@ class HomeScreen extends StatelessWidget {
                               width: 100,
                             ),
                             Text(
-                              'Rs 599',
+                              '**3',
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
