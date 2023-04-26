@@ -92,12 +92,12 @@ class SubSetting extends StatelessWidget {
           ),
           SizedBox(height: 20.0),
           GestureDetector(
-            // onTap: (){
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(builder: (context) => Payid()),
-            //   );
-            // },
+            onTap: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Payid()),
+              );
+            },
             child: Container(
               height: 60.0,
               padding: EdgeInsets.symmetric(horizontal: 16.0),

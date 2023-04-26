@@ -13,26 +13,27 @@ class Payid extends StatelessWidget {
             icon: Icon(Icons.arrow_back_ios),
             onPressed: () => Navigator.pop(context),
           ),
+          title: Text('Payment', style: TextStyle(color: Colors.black, fontSize: 30),),
           // other properties like title, actions, etc.
         ),
 
         body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              padding: EdgeInsets.all(10),
-              width: double.infinity,
-              height: 100,
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'Payment',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
+            // Container(
+            //   padding: EdgeInsets.all(10),
+            //   width: double.infinity,
+            //   height: 100,
+            //   alignment: Alignment.centerLeft,
+            //   child: Text(
+            //     'Payment',
+            //     style: TextStyle(
+            //       color: Colors.black,
+            //       fontSize: 24,
+            //       fontWeight: FontWeight.bold,
+            //     ),
+            //   ),
+            // ),
             Container(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -55,124 +56,121 @@ class Payid extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.all(10),
-                    child: Container(
-                      height: 300,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Padding(
-                                  padding: EdgeInsets.all(30),
-                                  child: Text(
-                                    'Ac Repair',
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      // fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Expanded(
-                                child: Padding(
-                                  padding: EdgeInsets.all(30),
-                                  child: Text(
-                                    'Rs.100',
-                                    textAlign: TextAlign.right,
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      //  fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          Divider(
-                            thickness: 1,
-                            color: Colors.grey,
-                            endIndent: 15,
-                            indent: 15,
-                          ),
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Padding(
-                                  padding: EdgeInsets.all(30),
-                                  child: Text(
-                                    'Tax',
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      // fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Expanded(
-                                child: Padding(
-                                  padding: EdgeInsets.all(30),
-                                  child: Text(
-                                    'Rs.0.0',
-                                    textAlign: TextAlign.right,
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      //  fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          Divider(
-                            thickness: 1,
-                            color: Colors.grey,
-                            endIndent: 15,
-                            indent: 15,
-                          ),
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Padding(
-                                  padding: EdgeInsets.all(30),
-                                  child: Text(
-                                    'Total',
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      // fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Expanded(
-                                child: Padding(
-                                  padding: EdgeInsets.all(30),
-                                  child: Text(
-                                    'Rs.100',
-                                    textAlign: TextAlign.right,
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      //  fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          Divider(
-                            thickness: 1,
-                            color: Colors.grey,
-                            endIndent: 15,
-                            indent: 15,
-                          ),
-
-                        ],
-                      ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    height: 300,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
                     ),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(left: 30),
+                              child: Text(
+                                'Ac Repair',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  // fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding: EdgeInsets.all(30),
+                                child: Text(
+                                  'Rs.100',
+                                  textAlign: TextAlign.right,
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    //  fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Divider(
+                          thickness: 1,
+                          color: Colors.grey,
+                          endIndent: 15,
+                          indent: 15,
+                        ),
+                        Row(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.all(30),
+                              child: Text(
+                                'Tax',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  // fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding: EdgeInsets.all(30),
+                                child: Text(
+                                  'Rs.0.0',
+                                  textAlign: TextAlign.right,
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    //  fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Divider(
+                          thickness: 1,
+                          color: Colors.grey,
+                          endIndent: 15,
+                          indent: 15,
+                        ),
+                        Row(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.all(30),
+                              child: Text(
+                                'Total',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  // fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding: EdgeInsets.all(30),
+                                child: Text(
+                                  'Rs.100',
+                                  textAlign: TextAlign.right,
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    //  fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Divider(
+                          thickness: 1,
+                          color: Colors.grey,
+                          endIndent: 15,
+                          indent: 15,
+                        ),
+
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 60,
                   ),
                   GestureDetector(
                     onTap: (){

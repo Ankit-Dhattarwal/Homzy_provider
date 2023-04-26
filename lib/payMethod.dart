@@ -14,25 +14,26 @@ class payMethod extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios),
           onPressed: () => Navigator.pop(context),
         ),
+        title: Text('Payment', style: TextStyle(color: Colors.black, fontSize: 30),),
         // other properties like title, actions, etc.
       ),
       body: Container(
         child: Column(
           children: [
-            Container(
-              padding: EdgeInsets.all(10),
-              width: double.infinity,
-              height: 100,
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'Payment',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
+            // Container(
+            //   padding: EdgeInsets.all(10),
+            //   width: double.infinity,
+            //   height: 100,
+            //   alignment: Alignment.centerLeft,
+            //   child: Text(
+            //     'Payment',
+            //     style: TextStyle(
+            //       color: Colors.black,
+            //       fontSize: 24,
+            //       fontWeight: FontWeight.bold,
+            //     ),
+            //   ),
+            // ),
             Expanded(
               child: SingleChildScrollView(
                 child: Container(

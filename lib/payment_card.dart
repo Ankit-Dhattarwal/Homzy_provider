@@ -5,7 +5,15 @@ class PayCardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Payment'),
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        leading: IconButton(
+          color: Colors.black,
+          icon: Icon(Icons.arrow_back_ios),
+          onPressed: () => Navigator.pop(context),
+        ),
+        title: Text('Payment', style: TextStyle(color: Colors.black, fontSize: 30),),
+        // other properties like title, actions, etc.
       ),
       body: Center(
         child: Column(
