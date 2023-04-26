@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider_night/main.dart';
 import 'package:provider_night/payment_card.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class payMethod extends StatelessWidget {
   @override
@@ -20,20 +21,23 @@ class payMethod extends StatelessWidget {
       body: Container(
         child: Column(
           children: [
-            // Container(
-            //   padding: EdgeInsets.all(10),
-            //   width: double.infinity,
-            //   height: 100,
-            //   alignment: Alignment.centerLeft,
-            //   child: Text(
-            //     'Payment',
-            //     style: TextStyle(
-            //       color: Colors.black,
-            //       fontSize: 24,
-            //       fontWeight: FontWeight.bold,
-            //     ),
-            //   ),
-            // ),
+            Container(
+              padding: EdgeInsets.all(10),
+              width: double.infinity,
+              height: 100,
+              alignment: Alignment.centerLeft,
+              child: TyperAnimatedTextKit(
+                text:
+                ['Note and thanks for using the homzy',
+                  'The Master Card is under constructor ',
+                ],
+                textStyle: TextStyle(
+                  color: Colors.black,
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
             Expanded(
               child: SingleChildScrollView(
                 child: Container(
