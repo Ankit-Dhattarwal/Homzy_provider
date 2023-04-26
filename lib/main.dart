@@ -110,6 +110,7 @@ class HomeScreen extends StatelessWidget {
               child: Row(
                 children: [
                   Container(
+                    margin: EdgeInsets.only(bottom: 20),
                     decoration: BoxDecoration(
                       color: Colors.greenAccent,
                       borderRadius: BorderRadius.circular(10),
@@ -124,7 +125,7 @@ class HomeScreen extends StatelessWidget {
                           size: 50,
                         ),
                         Text(
-                          'Swipe to show booked service',
+                          'Swipe To Show Booked Service',
                           style: TextStyle(fontWeight: FontWeight.bold,
                           fontSize: 20),
                         ),
@@ -133,7 +134,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Container(
                     width: 380,
-                    margin: EdgeInsets.only(left: 15,right: 16),
+                    margin: EdgeInsets.only(left: 15,right: 16, bottom: 20),
                     decoration: BoxDecoration(
                       color: Colors.blueAccent,
                       borderRadius: BorderRadius.circular(10),
@@ -276,6 +277,20 @@ class HomeScreen extends StatelessWidget {
                             ),
                           ],
                         ),
+                        // Center(
+                        //   child: Container(
+                        //     decoration: BoxDecoration(
+                        //       color: Colors.greenAccent,
+                        //       borderRadius: BorderRadius.circular(10),
+                        //     ),
+                        //     width: 200,
+                        //     height: 50,
+                        //     child: Center(
+                        //         child:
+                        //         Text('Confirm and Pay', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),),
+                        //     ),
+                        //   ),
+                        // ),
                       ],
                     ),
                   ),

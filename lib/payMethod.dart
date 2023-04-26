@@ -192,24 +192,24 @@ class payMethod extends StatelessWidget {
               ),
             ),
 
-          GestureDetector(
-              onTap: (){
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => HomeScreen()));
-              },
-              child: Container(
-                margin: EdgeInsets.only(left: 20, right: 20, bottom: 20),
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                height: 50,
-                alignment: Alignment.center,
-                child: Text(
-                    'Confirm'
-                ),
-              ),
-            ),
+          // GestureDetector(
+          //     onTap: (){
+          //       Navigator.push(context,
+          //           MaterialPageRoute(builder: (context) => HomeScreen()));
+          //     },
+          //     child: Container(
+          //       margin: EdgeInsets.only(left: 20, right: 20, bottom: 20),
+          //       decoration: BoxDecoration(
+          //         color: Colors.blue,
+          //         borderRadius: BorderRadius.circular(10),
+          //       ),
+          //       height: 50,
+          //       alignment: Alignment.center,
+          //       child: Text(
+          //           'Confirm'
+          //       ),
+          //     ),
+          //   ),
           ],
         ),
       ),
