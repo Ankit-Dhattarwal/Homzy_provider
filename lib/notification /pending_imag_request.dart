@@ -6,7 +6,15 @@ class pendingReqImg extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Scrollable Screen'),
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        leading: IconButton(
+          color: Colors.black,
+          icon: Icon(Icons.arrow_back_ios),
+          onPressed: () => Navigator.pop(context),
+        ),
+        title: Text('', style: TextStyle(color: Colors.black, fontSize: 30),),
+        // other properties like title, actions, etc.
       ),
       body: Container(
         child:  ListView(
@@ -51,14 +59,14 @@ class pendingReqImg extends StatelessWidget {
                                               color: Colors.black,
                                             ),
                                           ),
-                                          SizedBox(height: 5),
-                                          Text(
-                                            'Service Name',
-                                            style: TextStyle(
-                                              fontSize: 15,
-                                              color: Colors.black,
-                                            ),
-                                          ),
+                                          // SizedBox(height: 5),
+                                          // Text(
+                                          //   'Service Name',
+                                          //   style: TextStyle(
+                                          //     fontSize: 15,
+                                          //     color: Colors.black,
+                                          //   ),
+                                          // ),
                                         ],
                                       ),
                                     ],
@@ -98,19 +106,19 @@ class pendingReqImg extends StatelessWidget {
                                       Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text(
-                                            'Service',
-                                            style: TextStyle(
-                                              fontSize: 17,
-                                              // fontWeight: FontWeight.bold,
-                                              color: Colors.black,
-                                            ),
-                                          ),
-                                          SizedBox(height: 5),
+                                          // Text(
+                                          //   'Service',
+                                          //   style: TextStyle(
+                                          //     fontSize: 17,
+                                          //     // fontWeight: FontWeight.bold,
+                                          //     color: Colors.black,
+                                          //   ),
+                                          // ),
+                                          // SizedBox(height: 5),
                                           Text(
                                             'Ac Repair',
                                             style: TextStyle(
-                                              fontSize: 19,
+                                              fontSize: 25,
                                               color: Colors.black,
                                               fontWeight: FontWeight.bold,
                                             ),

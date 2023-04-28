@@ -28,7 +28,7 @@ class payMethod extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: TyperAnimatedTextKit(
                 text:
-                ['Note and thanks for using the homzy',
+                [
                   'The Master Card is under constructor ',
                 ],
                 textStyle: TextStyle(

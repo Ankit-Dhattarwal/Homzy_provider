@@ -45,7 +45,7 @@ class ServiceRequestScreen extends StatelessWidget {
                           Text(
                             'Plumber',
                             style: TextStyle(
-                              color: Colors.redAccent,
+                              color: Colors.black,
                               fontWeight: FontWeight.bold,
                               fontSize: 18.0,
                             ),
@@ -54,21 +54,22 @@ class ServiceRequestScreen extends StatelessWidget {
                           Text(
                             'Ac repair',
                             style: TextStyle(
-                              color: Colors.redAccent,
+                              color: Colors.black,
                               fontSize: 16.0,
                             ),
                           ),
                         ],
                       ),
                     ),
-                    Icon(Icons.arrow_forward),
+                    Icon(Icons.arrow_forward_ios),
                   ],
                 ),
               ),
             ),
             Divider(
+              thickness: 1,
               height: 2,
-              color: Colors.black,
+              color: Colors.grey,
               indent: 16.0,
               endIndent: 16.0,
             ),
@@ -105,7 +106,7 @@ class ServiceRequestScreen extends StatelessWidget {
                           Text(
                             'Plumber',
                             style: TextStyle(
-                              color: Colors.redAccent,
+                              color: Colors.black,
                               fontWeight: FontWeight.bold,
                               fontSize: 18.0,
                             ),
@@ -114,17 +115,24 @@ class ServiceRequestScreen extends StatelessWidget {
                           Text(
                             'Ac repair',
                             style: TextStyle(
-                              color: Colors.redAccent,
+                              color: Colors.black,
                               fontSize: 16.0,
                             ),
                           ),
                         ],
                       ),
                     ),
-                    Icon(Icons.arrow_forward),
+                    Icon(Icons.arrow_forward_ios),
                   ],
                 ),
               ),
+            ),
+            Divider(
+              thickness: 1,
+              height: 2,
+              color: Colors.grey,
+              indent: 16.0,
+              endIndent: 16.0,
             ),
             // Add more GestureDetector widgets inside the Column as needed
           ],
