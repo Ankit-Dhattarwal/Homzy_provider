@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider_night/payment_subPage.dart';
+import 'package:provider_night/notification /About_page.dart';
 
 class SubSetting extends StatelessWidget {
   @override
@@ -24,7 +25,7 @@ class SubSetting extends StatelessWidget {
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         image: DecorationImage(
-                          image: AssetImage("assets/salon_men/salon_service_men.jpeg"),
+                          image: AssetImage("assets/photo-2.jpg"),
                           fit: BoxFit.cover,
                         )
                     ),
@@ -216,11 +217,19 @@ class SubSetting extends StatelessWidget {
                       size: 50.0,
                     ),
                     SizedBox(width: 10.0),
-                    Text(
-                      "About us",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 23.0,
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => AboutScreen()),
+                        );
+                      },
+                      child: Text(
+                        "About us",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 23.0,
+                        ),
                       ),
                     ),
                   ],
